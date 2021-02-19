@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4993774337833633512}
   - component: {fileID: 8278364711012403533}
   - component: {fileID: 6126689423671623047}
+  - component: {fileID: 4694206333313257854}
   m_Layer: 0
   m_Name: Latrine
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &4694206333313257854
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5622361375033089106}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8913648476557962686, guid: 9c7d103a85d7e064fb5f7fea132a4f7b, type: 3}

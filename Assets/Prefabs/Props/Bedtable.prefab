@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4769735673498933369}
   - component: {fileID: 8475311362412025820}
   - component: {fileID: 5943253484864693014}
+  - component: {fileID: 5643783768916599861}
   m_Layer: 0
   m_Name: Bedtable
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5643783768916599861
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5294634465201078979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8692441838584355150, guid: 175a6624034c86b48a145bf94b3a48ba, type: 3}
