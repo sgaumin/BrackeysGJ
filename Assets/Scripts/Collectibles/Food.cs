@@ -1,37 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-    [SerializeField]
-    int nbrOfRatToAdd = 10;
-    [SerializeField] private Rat ratPrefab;
-    Transform ratHolder;
-    // Start is called before the first frame update
-    void Start()
-    {
-        ratHolder = GameObject.Find("RatHolder").transform;
-        Debug.Log("ratholder" + ratHolder);
-        Debug.Log("ratPrefab" + ratPrefab);
-    }
+	[SerializeField] private int nbrOfRatToAdd = 10;
+	[SerializeField] private Rat ratPrefab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    // on trigger, add rats to the horde
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.layer == 8)
-        {
-            Destroy(this.gameObject);
-            for (int i = 0; i < nbrOfRatToAdd; i++)
-            {
-                Instantiate(ratPrefab,other.gameObject.transform.position, Quaternion.identity, ratHolder);
-            }
-            //Debug.Log("hello world");
-        }
-    }
+	private LevelSetter levelSetter;
+	private Transform ratHolder;
+
+	void Start()
+	{
+		levelSetter = FindObjectOfType<LevelSetter>();
+		ratHolder = GameObject.Find("RatHolder").transform;
+
+		Debug.Log("ratholder" + ratHolder);
+		Debug.Log("ratPrefab" + ratPrefab);
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.layer == 8)
+		{
+			for (int i = 0; i < nbrOfRatToAdd; i++)
+			{
+				Rat currentRat = Instantiate(ratPrefab, transform.position, Quaternion.identity, ratHolder);
+				levelSetter.Rats.Add(currentRat);
+			}
+
+			Destroy(gameObject);
+		}
+	}
 }

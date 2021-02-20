@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6764868344328484410}
   - component: {fileID: 6764868344328484405}
   - component: {fileID: 6764868344328484404}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Obstacles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

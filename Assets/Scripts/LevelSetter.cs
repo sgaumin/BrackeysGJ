@@ -1,34 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelSetter : MonoBehaviour
 {
-  [Header("Level Parameters")]
-  [SerializeField] private int ratCountAtStart = 6;
+	[Header("Level Parameters")]
+	[SerializeField] private int ratCountAtStart = 6;
 
-  [Header("References")]
-  [SerializeField] private Transform ratPositionPoint;
-  [SerializeField] private Rat ratPrefab;
-  [SerializeField] private Transform ratHolder;
+	[Header("References")]
+	[SerializeField] private Transform ratPositionPoint;
+	[SerializeField] private Rat ratPrefab;
+	[SerializeField] private Transform ratHolder;
 
-  List<Rat> rats = new List<Rat>();
+	public List<Rat> Rats { get; set; } = new List<Rat>();
 
-  protected void Start()
-  {
-    for (int i = 0; i < ratCountAtStart; i++)
-    {
-      Rat currentRat = Instantiate(ratPrefab, ratHolder);
-      rats.Add(currentRat);
-    }
-  }
+	protected void Start()
+	{
+		for (int i = 0; i < ratCountAtStart; i++)
+		{
+			Rat currentRat = Instantiate(ratPrefab, ratHolder);
+			Rats.Add(currentRat);
+		}
+	}
 
-  private void Update()
-  {
-    if (!rats.IsEmpty())
-    {
-      rats.ForEach(x => ratPositionPoint.position += x.transform.position);
-      ratPositionPoint.position /= rats.Count; 
-    }
-  }
+	private void Update()
+	{
+		if (!Rats.IsEmpty())
+		{
+			foreach (Rat rat in Rats)
+			{
+				if (rat == null)
+					continue;
+
+				ratPositionPoint.position += rat.transform.position;
+			}
+
+			ratPositionPoint.position /= Rats.Count;
+		}
+	}
 }

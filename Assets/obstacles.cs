@@ -1,39 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class obstacles : MonoBehaviour
 {
-    [SerializeField]
-    int RatsToKill = 10;
-    GameObject[] prout;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] private int RatsToKill = 10;
 
-    public void DestroyRats()
-    {
-        prout = GameObject.FindGameObjectsWithTag("Rat");
-        for (int i = 0; i < RatsToKill; i++)
-        {
-            Destroy(prout[i]);
-        }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-        //Debug.Log(prout.Length);
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.layer == 8)
-        {
-            Destroy(gameObject);
-            DestroyRats();
-        }
+	private LevelSetter levelSetter;
 
-    }
+	protected void Start()
+	{
+		levelSetter = FindObjectOfType<LevelSetter>();
+	}
+
+	public void DestroyRats()
+	{
+		for (int i = 0; i < RatsToKill; i++)
+		{
+			Rat ratToKill = levelSetter.Rats.Random();
+			Destroy(ratToKill.gameObject);
+		}
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.layer == 8)
+		{
+			DestroyRats();
+			Destroy(gameObject);
+		}
+	}
 }
