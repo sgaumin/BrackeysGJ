@@ -16,7 +16,9 @@ public class obstacles : MonoBehaviour
 		for (int i = 0; i < RatsToKill; i++)
 		{
 			Rat ratToKill = levelSetter.Rats.Random();
+			levelSetter.Rats.Remove(ratToKill);
 			Destroy(ratToKill.gameObject);
+			
 		}
 	}
 
@@ -24,7 +26,15 @@ public class obstacles : MonoBehaviour
 	{
 		if (other.gameObject.layer == 8)
 		{
+			int ratsBefore = levelSetter.Rats.Count;
 			DestroyRats();
+			levelSetter.removeEmitter();
+			if(FindObjectOfType<MusicPlayer>() != null)
+            {
+				MusicPlayer music = FindObjectOfType<MusicPlayer>();
+				music.changeMusicParameter(ratsBefore, levelSetter.Rats.Count);
+			}
+
 			Destroy(gameObject);
 		}
 	}
