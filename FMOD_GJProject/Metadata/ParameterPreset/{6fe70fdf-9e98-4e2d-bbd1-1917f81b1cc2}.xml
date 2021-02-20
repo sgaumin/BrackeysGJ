@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{6fe70fdf-9e98-4e2d-bbd1-1917f81b1cc2}">
+		<property name="name">
+			<value>DEPLACEMENT</value>
+		</property>
+		<relationship name="folder">
+			<destination>{85a041a9-ae6f-49d4-81fe-b13a5290c3c8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5f099992-c0cb-4997-8b13-d35df66041b5}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5f099992-c0cb-4997-8b13-d35df66041b5}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1.8999998569488525</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>1.8999998569488525</value>
+		</property>
+		<property name="seekSpeedAsymmetric">
+			<value>true</value>
+		</property>
+	</object>
+</objects>
