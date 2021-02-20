@@ -29,7 +29,7 @@ public class Food : MonoBehaviour
             Destroy(this.gameObject);
             for (int i = 0; i < nbrOfRatToAdd; i++)
             {
-                Instantiate(ratPrefab, ratHolder);
+                Instantiate(ratPrefab,other.gameObject.transform.position, Quaternion.identity, ratHolder);
             }
             //Debug.Log("hello world");
         }
