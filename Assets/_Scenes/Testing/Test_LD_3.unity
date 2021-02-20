@@ -188,6 +188,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Support_Ground (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
 --- !u!4 &15694396 stripped
@@ -463,7 +473,7 @@ Transform:
   - {fileID: 549869942}
   - {fileID: 684548025}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &38821297
 PrefabInstance:
@@ -1081,6 +1091,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1140,6 +1155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -1705,6 +1725,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Plank
       objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1938,6 +1968,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1968,6 +2008,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2027,6 +2072,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -2231,6 +2281,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Plank (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
@@ -2471,6 +2531,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Ground (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
@@ -2821,6 +2891,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Ground (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
@@ -4873,6 +4953,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Plank (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5117,6 +5207,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5177,6 +5272,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Pillar
       objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
 --- !u!4 &514470378 stripped
@@ -5228,7 +5328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 542080637}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pillars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5678,10 +5778,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -5832,7 +5942,7 @@ GameObject:
   - component: {fileID: 611215743}
   - component: {fileID: 611215745}
   - component: {fileID: 611215744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Ramp_Support_01_low (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6368,10 +6478,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -6512,6 +6632,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Plank (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
@@ -6661,7 +6791,7 @@ Transform:
   - {fileID: 1129326744}
   - {fileID: 1538054683}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &751280216
 PrefabInstance:
@@ -6985,10 +7115,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -7251,7 +7391,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 331aa0b828c88874fafa31bef9b8f5b7, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 9e127674f89fd0141a7fca59e95e42df, type: 2}
 --- !u!1001 &806966391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7424,6 +7564,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7483,6 +7628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -7667,10 +7817,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -7742,10 +7902,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -7817,6 +7987,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7876,6 +8051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -8050,7 +8230,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 45.000004, y: 0, z: 0}
 --- !u!1001 &882530298
 PrefabInstance:
@@ -8437,6 +8617,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Plank (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
@@ -9655,6 +9845,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9714,6 +9909,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -9902,10 +10102,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -10825,7 +11035,7 @@ GameObject:
   - component: {fileID: 1112882659}
   - component: {fileID: 1112882661}
   - component: {fileID: 1112882660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Ramp_Support_01_low (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11619,6 +11829,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Ground (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
@@ -13103,10 +13323,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -13453,10 +13683,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -13743,10 +13983,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -14171,6 +14421,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14230,6 +14485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -14878,6 +15138,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Support_Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
 --- !u!4 &1564854197 stripped
@@ -14893,10 +15163,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -14968,6 +15248,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15027,6 +15312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -16199,6 +16489,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Support_Ground (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
 --- !u!4 &1712807981 stripped
@@ -16397,10 +16697,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -17929,6 +18239,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Support_Ground (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1069602359392142367, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444571181038129477, guid: d35c0a1799786404caee035ef7236c74,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d35c0a1799786404caee035ef7236c74, type: 3}
 --- !u!4 &1841629549 stripped
@@ -17946,7 +18266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849398667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Stairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17967,7 +18287,7 @@ Transform:
   - {fileID: 1991376124}
   - {fileID: 542080637}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1862321777
 PrefabInstance:
@@ -18551,10 +18871,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -18720,10 +19050,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -18795,6 +19135,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18855,6 +19200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp_Pillar (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
 --- !u!4 &1928489576 stripped
@@ -18870,10 +19220,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 6369401808910589961, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
       propertyPath: m_Name
       value: Ramp_Support_Mid (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612068797261748959, guid: a57884b595a814548bfb4048e6f12fd0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8993660271624142949, guid: a57884b595a814548bfb4048e6f12fd0,
         type: 3}
@@ -18945,6 +19305,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19004,6 +19369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -19191,7 +19561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991376124}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Planks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19465,6 +19835,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Plank (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
@@ -19986,11 +20366,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
-    - target: {fileID: 3220399482657360668, guid: 7206cb8f8143edd4e94d904e6fe3e4b7,
-        type: 3}
-      propertyPath: m_Speed
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 3517882586316736812, guid: 7206cb8f8143edd4e94d904e6fe3e4b7,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -20359,6 +20734,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Plank (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2985748295004227885, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092839029529946843, guid: 524c6666fd125fb4fb0c4ba012d5c262,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8290303221733147963, guid: 524c6666fd125fb4fb0c4ba012d5c262,
         type: 3}
@@ -20929,6 +21314,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 542080637}
     m_Modifications:
+    - target: {fileID: 1567639458527093891, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2781969617116194151, guid: fa826d9b985f9754db896e22b3c159ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20988,6 +21378,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ramp_Pillar (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301237534693244893, guid: fa826d9b985f9754db896e22b3c159ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa826d9b985f9754db896e22b3c159ff, type: 3}
@@ -21241,75 +21636,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 458432239966938378}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &721532435120646518
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 486965165429208949, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_Name
-      value: _Rat
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 975553307446996431, guid: 403056016c327ff43a0c0ee373f52bdd,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 403056016c327ff43a0c0ee373f52bdd, type: 3}
 --- !u!1001 &1028832713217649780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21435,7 +21761,7 @@ PrefabInstance:
     - target: {fileID: 6764868344328484408, guid: be7164e62c8895b4d9a73d3d89098a12,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 6764868344328484408, guid: be7164e62c8895b4d9a73d3d89098a12,
         type: 3}
