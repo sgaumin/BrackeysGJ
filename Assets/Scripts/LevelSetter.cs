@@ -8,14 +8,27 @@ public class LevelSetter : MonoBehaviour
   [SerializeField] private int ratCountAtStart = 6;
 
   [Header("References")]
+  [SerializeField] private Transform ratPositionPoint;
   [SerializeField] private Rat ratPrefab;
   [SerializeField] private Transform ratHolder;
+
+  List<Rat> rats = new List<Rat>();
 
   protected void Start()
   {
     for (int i = 0; i < ratCountAtStart; i++)
     {
-      Instantiate(ratPrefab, ratHolder);
+      Rat currentRat = Instantiate(ratPrefab, ratHolder);
+      rats.Add(currentRat);
+    }
+  }
+
+  private void Update()
+  {
+    if (!rats.IsEmpty())
+    {
+      rats.ForEach(x => ratPositionPoint.position += x.transform.position);
+      ratPositionPoint.position /= rats.Count; 
     }
   }
 }
