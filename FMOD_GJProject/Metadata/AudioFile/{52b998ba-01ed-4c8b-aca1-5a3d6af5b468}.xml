@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{52b998ba-01ed-4c8b-aca1-5a3d6af5b468}">
+		<property name="assetPath">
+			<value>rat_depalcement_boucle-001.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>23</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{06ccfdd8-8baa-4885-9c15-8158e8e10706}</destination>
+		</relationship>
+	</object>
+</objects>
