@@ -31,7 +31,7 @@ public class Food : MonoBehaviour
             {
                 Instantiate(ratPrefab, ratHolder);
             }
-            Debug.Log("hello world");
+            //Debug.Log("hello world");
         }
     }
 }
