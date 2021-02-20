@@ -473,7 +473,7 @@ Transform:
   - {fileID: 549869942}
   - {fileID: 684548025}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &38821297
 PrefabInstance:
@@ -20506,8 +20506,14 @@ PrefabInstance:
     - target: {fileID: 3847692451499064418, guid: 7206cb8f8143edd4e94d904e6fe3e4b7,
         type: 3}
       propertyPath: ratCountAtStart
-      value: 80
+      value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3847692451499064418, guid: 7206cb8f8143edd4e94d904e6fe3e4b7,
+        type: 3}
+      propertyPath: moveEmitter
+      value: 
+      objectReference: {fileID: 2287081644167521721, guid: b127326ce22207348b480098b71042ac,
+        type: 3}
     - target: {fileID: 5482748830018085267, guid: 7206cb8f8143edd4e94d904e6fe3e4b7,
         type: 3}
       propertyPath: m_Name
@@ -21868,7 +21874,7 @@ PrefabInstance:
     - target: {fileID: 6764868344328484408, guid: be7164e62c8895b4d9a73d3d89098a12,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6764868344328484408, guid: be7164e62c8895b4d9a73d3d89098a12,
         type: 3}
