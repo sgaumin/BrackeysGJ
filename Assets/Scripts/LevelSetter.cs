@@ -15,7 +15,7 @@ public class LevelSetter : MonoBehaviour
 	//[SerializeField] private GameObject moveEmitter;
 	[FMODUnity.EventRef]
 	public string PlayerStateEvent = "";
-	FMOD.Studio.EventInstance playerState;
+	public FMOD.Studio.EventInstance playerState;
 	public int nbrEventInstances = 0;
 	public List<Rat> Rats { get; set; } = new List<Rat>();
 
@@ -67,4 +67,13 @@ public class LevelSetter : MonoBehaviour
         }
 
 	}
+	public void removeEmitter()
+    {
+		if(nbrEventInstances > 1)
+        {
+			playerState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+			nbrEventInstances--;
+		}
+
+    }
 }

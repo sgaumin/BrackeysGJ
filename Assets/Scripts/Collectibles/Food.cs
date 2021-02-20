@@ -24,6 +24,7 @@ public class Food : MonoBehaviour
 	private void OnTriggerEnter(Collider other)
 	{
 		foodCounter++;
+		int ratsBefore = rats.Count;
 		Debug.Log("nombre de rats before" + rats.Count);
 		if (other.gameObject.layer == 8)
 		{
@@ -44,7 +45,7 @@ public class Food : MonoBehaviour
                 }
 			}
 			MusicPlayer music = FindObjectOfType<MusicPlayer>();
-			music.changeMusicParameter();
+			music.changeMusicParameter(ratsBefore, rats.Count);
 			//Debug.Log(foodCounter + "after la bouffe le kfc");
 			Destroy(gameObject);
 		}

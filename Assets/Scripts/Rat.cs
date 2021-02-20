@@ -10,14 +10,16 @@ public class Rat : MonoBehaviour
 	[SerializeField] private NavMeshAgent agent;
 	public List<Rat> rats { get; set; } = new List<Rat>();
 	private PlayerController player;
+	private LevelSetter levelSetter;
 
 
 	protected void Start()
 	{
 		player = FindObjectOfType<PlayerController>();
 		//rats = FindObjectOfType<LevelSetter>().Rats;
-		
-		
+		levelSetter = FindObjectOfType<LevelSetter>();
+
+
 
 	}
 
@@ -25,6 +27,11 @@ public class Rat : MonoBehaviour
 	{
 		//UnityEngine.Debug.Log("nombre de rats " + rats.Count);
 		agent.SetDestination(player.Destination);
+
+	}
+    private void OnDestroy()
+    {
+		levelSetter.playerState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
 	}
 }

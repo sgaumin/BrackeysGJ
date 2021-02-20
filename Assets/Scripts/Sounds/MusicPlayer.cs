@@ -38,18 +38,31 @@ public class MusicPlayer : MonoBehaviour
 
 
 	}
-	public void changeMusicParameter()
+	public void changeMusicParameter(int countBefore, int countAfter)
 	{
+		UnityEngine.Debug.Log(countBefore + " " + countAfter);
 		if (levelSetter != null)
 		{
-			UnityEngine.Debug.Log(levelSetter.Rats.Count);
-			if (levelSetter.Rats.Count % 20 == 0 && parameterValue < 1 && levelSetter.Rats.Count > 20)
+			//UnityEngine.Debug.Log(levelSetter.Rats.Count);
+			if (levelSetter.Rats.Count % 20 == 0)
 			{
-				UnityEngine.Debug.Log("et HOP");
-				parameterValue += 0.1f;
-				GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("SIZE", parameterValue);
+				if(parameterValue < 1 && levelSetter.Rats.Count > 20 && countBefore < countAfter)
+                {
+					parameterValue += 0.1f;
+					GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("SIZE", parameterValue);
+				}
+				if (countBefore > countAfter)
+				{
+					UnityEngine.Debug.Log("et hop on diminue la musique");
+					parameterValue -= 0.1f;
+					GetComponent<FMODUnity.StudioEventEmitter>().SetParameter("SIZE", parameterValue);
+				}
+				//UnityEngine.Debug.Log("et HOP");
+
 			}
+
 		}
+		
 
 	}
 }
