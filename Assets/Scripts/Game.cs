@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Game : GameSystem
 {
-	private const string MENU_SCENE = "Menu";
+	private const string MENU_SCENE = "MenuMain";
 
 	public delegate void GameEventHandler();
 	public event GameEventHandler OnStart;
@@ -96,6 +96,10 @@ public class Game : GameSystem
 			}));
 		}
 	}
+	public void QuitGame()
+    {
+		Application.Quit();
+    }
 
 	private IEnumerator LoadLevelCore(Action content = null)
 	{
