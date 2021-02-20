@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3268449731645135821}
   - component: {fileID: 4349429781698600261}
+  - component: {fileID: 6138777477567296012}
   m_Layer: 0
   m_Name: Soup
   m_TagString: Untagged
@@ -124,4 +125,19 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -4831119519522426864, guid: 82874b2f18b84534dad6ea44704acc0b, type: 3}
+--- !u!114 &6138777477567296012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2742706579972129143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ca4efbf824ba648be4e49a1a986188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbrOfRatToAdd: 10
+  ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
+    type: 3}

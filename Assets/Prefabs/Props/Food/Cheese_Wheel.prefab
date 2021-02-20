@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7512541606612105495}
   - component: {fileID: -7338991822997833090}
+  - component: {fileID: 6522335942360137800}
   m_Layer: 0
   m_Name: Cheese_Wheel
   m_TagString: Untagged
@@ -119,9 +120,24 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7136578566581691309}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 6855699757333435698, guid: 1915e2c466458b74d933eea80f04ecde, type: 3}
+--- !u!114 &6522335942360137800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136578566581691309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ca4efbf824ba648be4e49a1a986188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbrOfRatToAdd: 10
+  ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
+    type: 3}

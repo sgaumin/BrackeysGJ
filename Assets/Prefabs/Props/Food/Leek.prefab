@@ -89,6 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3735856619819643911}
   - component: {fileID: 3558870057479700141}
+  - component: {fileID: 1142771697210743395}
   m_Layer: 0
   m_Name: Leek
   m_TagString: Untagged
@@ -119,9 +120,24 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4076810316281048765}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -8872626364347971773, guid: 30f6001967c527647a7d9afd6451ff23, type: 3}
+--- !u!114 &1142771697210743395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4076810316281048765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ca4efbf824ba648be4e49a1a986188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbrOfRatToAdd: 10
+  ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
+    type: 3}

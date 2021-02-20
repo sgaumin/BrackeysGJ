@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1113678858933182371}
   - component: {fileID: -2686837954552467962}
+  - component: {fileID: 7421225616674830965}
   m_Layer: 0
   m_Name: Tankard
   m_TagString: Untagged
@@ -40,12 +41,27 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306039892207682841}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -2343967495189360437, guid: 32e97fa9564f4bc4ea5add2ee9810023, type: 3}
+--- !u!114 &7421225616674830965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306039892207682841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ca4efbf824ba648be4e49a1a986188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbrOfRatToAdd: 10
+  ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
+    type: 3}
 --- !u!1 &1693432258123429162
 GameObject:
   m_ObjectHideFlags: 0

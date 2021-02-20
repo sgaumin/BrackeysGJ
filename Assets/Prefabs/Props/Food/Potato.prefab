@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748047189318371350}
   - component: {fileID: 4161512535253681552}
+  - component: {fileID: 1572035051911541390}
   m_Layer: 0
   m_Name: Potato
   m_TagString: Untagged
@@ -40,12 +41,27 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83959085992333996}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 2012426184181828316, guid: bd57946b3d959d6468772c0aa6fde1c8, type: 3}
+--- !u!114 &1572035051911541390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83959085992333996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ca4efbf824ba648be4e49a1a986188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nbrOfRatToAdd: 10
+  ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
+    type: 3}
 --- !u!1 &2347975855546107244
 GameObject:
   m_ObjectHideFlags: 0
