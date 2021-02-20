@@ -8,6 +8,7 @@ public class Food : MonoBehaviour
 	public List<Rat> rats = new List<Rat>();
 	private LevelSetter levelSetter;
 	private Transform ratHolder;
+	private static int foodCounter;
 
 	void Start()
 	{
@@ -22,7 +23,7 @@ public class Food : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		
+		foodCounter++;
 		Debug.Log("nombre de rats before" + rats.Count);
 		if (other.gameObject.layer == 8)
 		{
@@ -31,10 +32,10 @@ public class Food : MonoBehaviour
 			{
 				Rat currentRat = Instantiate(ratPrefab, transform.position, Quaternion.identity, ratHolder);
 				levelSetter.Rats.Add(currentRat);
-				if(i == nbrOfRatToAdd-1)
+				if(i == nbrOfRatToAdd-1 && foodCounter % 5 == 0 && foodCounter != 0)
                 {
-					
-					Debug.Log("nombre de rats after" +FindObjectOfType<LevelSetter>().Rats.Count);
+					Debug.Log("each 5 " + foodCounter);
+					//Debug.Log("nombre de rats after" +FindObjectOfType<LevelSetter>().Rats.Count);
 					FindObjectOfType<LevelSetter>().addEmitter(currentRat.transform);
                 }
                 else
@@ -43,6 +44,7 @@ public class Food : MonoBehaviour
                 }
 			}
 
+			//Debug.Log(foodCounter + "after la bouffe le kfc");
 			Destroy(gameObject);
 		}
 	}
