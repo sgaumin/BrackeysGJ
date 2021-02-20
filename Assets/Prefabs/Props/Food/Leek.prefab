@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3735856619819643911}
   - component: {fileID: 3558870057479700141}
   - component: {fileID: 1142771697210743395}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leek
   m_TagString: Untagged
   m_Icon: {fileID: 0}

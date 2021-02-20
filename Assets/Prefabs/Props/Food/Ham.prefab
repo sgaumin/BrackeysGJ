@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3799355582342088456}
   - component: {fileID: 712117065647720203}
   - component: {fileID: 993145735521624788}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ham
   m_TagString: Untagged
   m_Icon: {fileID: 0}

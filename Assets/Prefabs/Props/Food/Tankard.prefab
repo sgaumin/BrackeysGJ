@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1113678858933182371}
   - component: {fileID: -2686837954552467962}
   - component: {fileID: 7421225616674830965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tankard
   m_TagString: Untagged
   m_Icon: {fileID: 0}

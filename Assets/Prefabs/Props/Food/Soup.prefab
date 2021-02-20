@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3268449731645135821}
   - component: {fileID: 4349429781698600261}
   - component: {fileID: 6138777477567296012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Soup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
