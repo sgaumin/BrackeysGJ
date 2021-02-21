@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8ca4efbf824ba648be4e49a1a986188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbrOfRatToAdd: 10
+  nbrOfRatToAdd: 5
   ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
     type: 3}
+  rats: []

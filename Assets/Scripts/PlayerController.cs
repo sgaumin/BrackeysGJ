@@ -5,10 +5,18 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private LayerMask movementLayer;
 	[SerializeField] private string inputName;
 
-	public Vector3 Destination { get; private set; }
+	[Header("References")]
+	[SerializeField] private LevelSetter levelSetter;
 
 	private RaycastHit hit;
 	private Ray ray;
+
+	public Vector3 Destination { get; private set; }
+
+	protected void Start()
+	{
+		Destination = levelSetter.StartSpawn;
+	}
 
 	private void Update()
 	{

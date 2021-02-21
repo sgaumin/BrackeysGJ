@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using FMOD;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class Rat : MonoBehaviour
@@ -16,22 +15,22 @@ public class Rat : MonoBehaviour
 	protected void Start()
 	{
 		player = FindObjectOfType<PlayerController>();
-		//rats = FindObjectOfType<LevelSetter>().Rats;
 		levelSetter = FindObjectOfType<LevelSetter>();
-
-
-
 	}
 
 	private void Update()
 	{
-		//UnityEngine.Debug.Log("nombre de rats " + rats.Count);
 		agent.SetDestination(player.Destination);
-
 	}
-    private void OnDestroy()
-    {
-		levelSetter.playerState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
+	public void Kill()
+	{
+		levelSetter.Rats.Remove(this);
+		Destroy(gameObject);
+	}
+
+	private void OnDestroy()
+	{
+		levelSetter.playerState.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 	}
 }
