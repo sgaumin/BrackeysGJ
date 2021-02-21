@@ -173,6 +173,9 @@
 		<property name="maximumDistance">
 			<value>500</value>
 		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{94c5b8ca-e1a9-4ef5-9258-b2a6b70ec346}" />
 </objects>
