@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 2914799324310810905}
   - component: {fileID: 1123513705272231379}
   - component: {fileID: 7035060416781122679}
+  - component: {fileID: 5404544636591244212}
   m_Layer: 0
   m_Name: Fireplace
   m_TagString: Untagged
@@ -192,6 +193,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4294830707070075996, guid: 3afe0735065da324aad01250ed67b39d, type: 3}
+--- !u!114 &5404544636591244212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483788412244157446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: "event:/SD/Feu qui cr\xE9pite"
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 500
 --- !u!1 &6055778258096189574
 GameObject:
   m_ObjectHideFlags: 0
