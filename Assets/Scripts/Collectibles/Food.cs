@@ -44,8 +44,12 @@ public class Food : MonoBehaviour
 					//Debug.Log("nombre d'isntances " + nbrEventInstances);
                 }
 			}
-			MusicPlayer music = FindObjectOfType<MusicPlayer>();
-			music.changeMusicParameter(ratsBefore, rats.Count);
+			if(FindObjectOfType<MusicPlayer>() != null)
+            {
+				MusicPlayer music = FindObjectOfType<MusicPlayer>();
+				music.changeMusicParameter(ratsBefore, rats.Count);
+			}
+
 			//Debug.Log(foodCounter + "after la bouffe le kfc");
 			Destroy(gameObject);
 		}
