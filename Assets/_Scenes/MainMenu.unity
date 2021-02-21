@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1424,7 +1424,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f7d471015abf57649ae404e59a739684, type: 3}
-    m_FontSize: 69
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1434,8 +1434,11 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Team
+    m_LineSpacing: 1.78
+  m_Text: "Team\n\nYann Kukolewsky / Galgen : 2D Artist\nGuillaume D'arcy-Orga :
+    Sound Designer / Composer\nChlo\xE9 Morel \"Jezzos\" : 3D Artist\nRudy Michel 
+    \"Xiff\" : 3D Artist\nAntoine Brousse / \"itsMeTwn\" : Game design / Level Design\nSeb
+    Gm  \"Mahjoub\" : Programmer\nSylve Renault \"Oxy\" : Game Design / Programmer"
 --- !u!222 &2046591629
 CanvasRenderer:
   m_ObjectHideFlags: 0
