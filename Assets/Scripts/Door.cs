@@ -10,6 +10,9 @@ public class Door : MonoBehaviour
     float rotationAngle;
     int ratsCount;
     bool isRotating;
+    [FMODUnity.EventRef]
+    public string doorSound = "";
+    public FMOD.Studio.EventInstance doorState;
     void Start()
     {
         parent = gameObject.transform.parent;
@@ -30,6 +33,7 @@ public class Door : MonoBehaviour
             if(ratsCount > 20)
             {
                 Debug.Log("collider");
+                
                 Quaternion rotation = Quaternion.identity;
                 //rotation.eulerAngles = new Vector3(0, 90, 0);
                 //parent.transform.rotation = rotation;
@@ -50,10 +54,10 @@ public class Door : MonoBehaviour
                 float endRotation = startRotation + rotationAngle;
         
             float t = 0.0f;
-            //Time.timeScale = 0.2f;
-            //Debug.Log("on est dans le cas ou r > 0" + parent.transform.rotation.y);
-            
-            while (t < duration)
+        //Time.timeScale = 0.2f;
+        //Debug.Log("on est dans le cas ou r > 0" + parent.transform.rotation.y);
+        FMODUnity.RuntimeManager.PlayOneShot(doorSound, transform.position);
+        while (t < duration)
             {
                 isRotating = true;
                  t += Time.deltaTime;

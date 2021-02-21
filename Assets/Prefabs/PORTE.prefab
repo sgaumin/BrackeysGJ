@@ -90,6 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad02156cc967164783dda923c75cd19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationAngle: 0
+  doorSound: event:/SD/porte qui s'ouvre violement
 --- !u!1001 &7744306047204225679
 PrefabInstance:
   m_ObjectHideFlags: 0
