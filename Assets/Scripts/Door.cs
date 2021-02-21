@@ -13,6 +13,9 @@ public class Door : MonoBehaviour
     [FMODUnity.EventRef]
     public string doorSound = "";
     public FMOD.Studio.EventInstance doorState;
+    [FMODUnity.EventRef]
+    public string doorClosed = "";
+    public FMOD.Studio.EventInstance doorClosedState;
     void Start()
     {
         parent = gameObject.transform.parent;
@@ -44,8 +47,13 @@ public class Door : MonoBehaviour
 
                 //parent.position = new Vector3(parent.position.x + 5, parent.position.y, parent.position.z);
             }
+            else
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(doorClosed, transform.position);
+            }
 
         }
+
     }
     IEnumerator Rotate(float duration, float rotationAngle, Quaternion objectToRotate)
     {

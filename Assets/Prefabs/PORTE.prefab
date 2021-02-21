@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 0
   doorSound: event:/SD/porte qui s'ouvre violement
+  doorClosed: "event:/SD/porte_ferm\xE9e"
 --- !u!1001 &7744306047204225679
 PrefabInstance:
   m_ObjectHideFlags: 0
