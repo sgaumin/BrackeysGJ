@@ -280,9 +280,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3220399482127035121}
   - component: {fileID: 3220399482127035120}
-  - component: {fileID: 3220399482127035134}
   - component: {fileID: 5986910396488013795}
-  - component: {fileID: 2882061976406549405}
+  - component: {fileID: 7920644607582991714}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -297,8 +296,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3220399482127035123}
-  m_LocalRotation: {x: 0.4312733, y: 6.2133485e-13, z: -1.2998292e-12, w: 0.9022214}
-  m_LocalPosition: {x: 0, y: 131.6, z: -106.2}
+  m_LocalRotation: {x: 0.5325422, y: 0.000000024244565, z: -0.000000012145936, w: 0.8464035}
+  m_LocalPosition: {x: 0, y: 175.8, z: -84.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3220399481249523342}
@@ -340,36 +339,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 3220399481249523342}
---- !u!114 &3220399482127035134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3220399482127035123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CollideAgainst:
-    serializedVersion: 2
-    m_Bits: 4096
-  m_IgnoreTag: 
-  m_TransparentLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_MinimumDistanceFromTarget: 0.1
-  m_AvoidObstacles: 1
-  m_DistanceLimit: 0
-  m_MinimumOcclusionTime: 0
-  m_CameraRadius: 0.1
-  m_Strategy: 0
-  m_MaximumEffort: 4
-  m_SmoothingTime: 0
-  m_Damping: 5
-  m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 0
 --- !u!114 &5986910396488013795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,7 +354,7 @@ MonoBehaviour:
   m_FocusTracksTarget: 0
   m_FocusOffset: 0
   m_Profile: {fileID: 11400000, guid: 5b4a8b5108e1b2a4eaa9076167ad86da, type: 2}
---- !u!114 &2882061976406549405
+--- !u!114 &7920644607582991714
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -394,14 +363,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3220399482127035123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 0}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
+  m_ConfineMode: 1
+  m_BoundingVolume: {fileID: 0}
+  m_BoundingShape2D: {fileID: 0}
+  m_ConfineScreenEdges: 1
+  m_Damping: 1
 --- !u!1 &3220399482729672340
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +416,8 @@ GameObject:
   - component: {fileID: 3517882586316736990}
   - component: {fileID: 1535543776383283250}
   - component: {fileID: 1990023878581005058}
+  - component: {fileID: 9126632704221462563}
+  - component: {fileID: 7778169740708181309}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -461,8 +432,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3517882586316736976}
-  m_LocalRotation: {x: 0.4312733, y: 6.2133485e-13, z: -1.2998292e-12, w: 0.9022214}
-  m_LocalPosition: {x: 0, y: 131.6, z: -106.2}
+  m_LocalRotation: {x: 0.43127328, y: -0.0000000018067591, z: 0.000000003779729, w: 0.9022214}
+  m_LocalPosition: {x: 0, y: 131.6, z: -100.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3220399482729672341}
@@ -588,6 +559,83 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: -1
+--- !u!114 &9126632704221462563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517882586316736976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 3517882586316736812}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
+--- !u!114 &7778169740708181309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517882586316736976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 5b4a8b5108e1b2a4eaa9076167ad86da, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!1 &5482748830018085267
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ratCountAtStart: 80
-  verticalTriggerFloor: 15
+  verticalTriggerFloor: 1
   PlayerStateEvent: "event:/SD/d\xE9placement"
   ratPositionPoint: {fileID: 6566541438767708997}
   ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
