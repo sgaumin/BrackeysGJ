@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{9a936894-298d-479c-835d-4cecd3ef432b}">
+		<property name="assetPath">
+			<value>OUVERT-012.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{06ccfdd8-8baa-4885-9c15-8158e8e10706}</destination>
+		</relationship>
+	</object>
+</objects>
