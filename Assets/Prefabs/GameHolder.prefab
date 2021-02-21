@@ -712,12 +712,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ratCountAtStart: 80
+  verticalTriggerFloor: 15
+  PlayerStateEvent: "event:/SD/d\xE9placement"
   ratPositionPoint: {fileID: 6566541438767708997}
   ratPrefab: {fileID: 5784415690586681832, guid: 254244ba70cb19647a89f6b3f9ffc8e8,
     type: 3}
   ratHolder: {fileID: 5477499892977222577}
-  moveEmitter: {fileID: 0}
-  PlayerStateEvent: "event:/SD/d\xE9placement"
+  secondFloor: {fileID: 0}
 --- !u!1001 &4852636134801299308
 PrefabInstance:
   m_ObjectHideFlags: 0
