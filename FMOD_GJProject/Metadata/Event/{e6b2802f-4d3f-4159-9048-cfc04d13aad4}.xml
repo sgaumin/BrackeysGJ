@@ -89,8 +89,20 @@
 	</object>
 	<object class="MixerBusPanner" id="{1b61ca2e-3328-4d28-8e9f-e0c28c10132c}" />
 	<object class="MultiSound" id="{9c39f977-a496-45b3-b29e-031d69c9922e}">
+		<property name="triggerProbabilityEnabled">
+			<value>true</value>
+		</property>
+		<property name="triggerProbability">
+			<value>80</value>
+		</property>
 		<property name="length">
 			<value>6</value>
+		</property>
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
+		<property name="maxVoices">
+			<value>1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{a7305843-61c0-479b-a7d6-f73c29b11bf0}</destination>
