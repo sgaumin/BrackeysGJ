@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
 using TMPro;
+using Tools.Utils;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-	[SerializeField] private float rotationAngle;
+	[SerializeField, IntRangeSlider(-180, 180)] private IntRange rotationAngle = new IntRange(110, 130);
 	[SerializeField] private float ratCountToOpen = 20;
 
 	[Header("Sounds")]
@@ -13,21 +14,20 @@ public class Door : MonoBehaviour
 	[FMODUnity.EventRef] public string doorClosed = "";
 	public FMOD.Studio.EventInstance doorClosedState;
 
+	[Header("Animations")]
+	[SerializeField] private float openingDoorDuration = 0.5f;
+	[SerializeField] private Ease openingDoorEase = Ease.OutBounce;
+
 	[Header("References")]
 	[SerializeField] private TextMeshProUGUI description;
 
-	private Transform parent;
-	private bool isRotating;
-	private int ratsCount;
+	private bool hasBeenUnlocked;
 	private LevelSetter levelSetter;
 	private int displayCount;
 
 	void Start()
 	{
 		levelSetter = FindObjectOfType<LevelSetter>();
-
-		parent = gameObject.transform.parent;
-		isRotating = false;
 	}
 
 	private void Update()
@@ -37,77 +37,28 @@ public class Door : MonoBehaviour
 		description.color = displayCount >= ratCountToOpen ? Color.green : Color.red;
 	}
 
-	private void OnCollisionEnter(Collision other)
+	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag == "Rat")
 		{
-			ratsCount = FindObjectOfType<LevelSetter>().Rats.Count;
-			if (ratsCount >= ratCountToOpen)
+			if (levelSetter.Rats.Count >= ratCountToOpen && !hasBeenUnlocked)
 			{
-				Debug.Log("collider");
-
-				Quaternion rotation = Quaternion.identity;
-				//rotation.eulerAngles = new Vector3(0, 90, 0);
-				//parent.transform.rotation = rotation;
-				if (isRotating == false)
-				{
-					StartCoroutine(Rotate(0.2f, rotationAngle, rotation));
-				}
-
-				//parent.position = new Vector3(parent.position.x + 5, parent.position.y, parent.position.z);
+				Rotate();
 			}
 			else
 			{
 				FMODUnity.RuntimeManager.PlayOneShot(doorClosed, transform.position);
 			}
-
 		}
-
 	}
-	IEnumerator Rotate(float duration, float rotationAngle, Quaternion objectToRotate)
+
+	private void Rotate()
 	{
 		description.gameObject.SetActive(false);
-		float startRotation = transform.eulerAngles.y;
-		float endRotation = startRotation + rotationAngle;
-
-		float t = 0.0f;
-		//Time.timeScale = 0.2f;
-		//Debug.Log("on est dans le cas ou r > 0" + parent.transform.rotation.y);
 		FMODUnity.RuntimeManager.PlayOneShot(doorSound, transform.position);
-		while (t < duration)
-		{
-			isRotating = true;
-			t += Time.deltaTime;
-			if (rotationAngle < 0)
-			{
-				float yRotation = Mathf.Lerp(startRotation, endRotation, t / duration) % rotationAngle;
-				yRotation += transform.eulerAngles.y;
-				objectToRotate.eulerAngles = new Vector3(parent.eulerAngles.x, yRotation,
-				parent.eulerAngles.z);
-				parent.transform.rotation = objectToRotate;
-				//parent.transform.Rotate(Vector3.down, 0.5f);
+		hasBeenUnlocked = true;
 
-			}
-			/*                if(rotationAngle > 0)
-							{
-							float yRotation = Mathf.Lerp(startRotation, endRotation, t / duration) % rotationAngle;
-							yRotation -= transform.eulerAngles.y;
-							objectToRotate.eulerAngles = new Vector3(parent.eulerAngles.x, yRotation,
-							parent.eulerAngles.z);
-							parent.transform.rotation = objectToRotate;
-							//parent.transform.Rotate(Vector3.up, 0.5f);
-
-							}*/
-
-
-			//Time.timeScale = 1.0f;
-			yield return null;
-		}
-		if (t == duration)
-		{
-			isRotating = false;
-		}
-
-		//yield return new WaitForSeconds(0.01f);
+		Vector3 targetRotation = transform.rotation.eulerAngles + Vector3.zero.withY(rotationAngle.RandomValue);
+		transform.DORotate(targetRotation, openingDoorDuration).SetEase(openingDoorEase);
 	}
 }
