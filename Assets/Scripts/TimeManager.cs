@@ -1,39 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField]
-    float timeInSeconds;
-    [SerializeField]
-    Text timer;
-    void Start()
-    {
+	[SerializeField]
+	float timeInSeconds;
+	[SerializeField]
+	Text timer;
 
-    }
+	private Game game;
 
-    // Update is called once per frame
-    void Update()
-    {
-        launchTimer();
-    }
-    public void launchTimer()
-    {
-        timeInSeconds -= Time.deltaTime % 60;
-        float timeLeft = Mathf.RoundToInt(timeInSeconds);
+	void Start()
+	{
+		game = FindObjectOfType<Game>();
+	}
 
-        if (timeInSeconds <= 0)
-        {
-            // Debug.Log("prout");
-            //Do finish timer
-        }
-        else
-        {
-            timer.text = timeLeft + "";
-            //Debug.Log(timeInSeconds);
-        }
-    }
+	void Update()
+	{
+		launchTimer();
+	}
+
+	public void launchTimer()
+	{
+		timeInSeconds -= Time.deltaTime % 60;
+		float timeLeft = Mathf.RoundToInt(timeInSeconds);
+
+		if (timeInSeconds <= 0)
+		{
+			game.LoadSceneByName("Lose");
+
+		}
+		else
+		{
+			timer.text = timeLeft + "";
+			//Debug.Log(timeInSeconds);
+		}
+	}
 }

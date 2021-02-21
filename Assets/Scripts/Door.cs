@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 {
 	[SerializeField, IntRangeSlider(-180, 180)] private IntRange rotationAngle = new IntRange(110, 130);
 	[SerializeField] private float ratCountToOpen = 20;
+	[SerializeField] private bool isFinal;
 
 	[Header("Sounds")]
 	[FMODUnity.EventRef] public string doorSound = "";
@@ -24,9 +25,11 @@ public class Door : MonoBehaviour
 	private bool hasBeenUnlocked;
 	private LevelSetter levelSetter;
 	private int displayCount;
+	private Game game;
 
 	void Start()
 	{
+		game = FindObjectOfType<Game>();
 		levelSetter = FindObjectOfType<LevelSetter>();
 	}
 
@@ -44,6 +47,11 @@ public class Door : MonoBehaviour
 			if (levelSetter.Rats.Count >= ratCountToOpen && !hasBeenUnlocked)
 			{
 				Rotate();
+
+				if (isFinal)
+				{
+					game.LoadSceneByName("Win");
+				}
 			}
 			else
 			{

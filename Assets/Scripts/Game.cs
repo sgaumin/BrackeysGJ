@@ -96,10 +96,24 @@ public class Game : GameSystem
 			}));
 		}
 	}
+
+	public void LoadSceneByName(string sceneName)
+	{
+		if (loadingLevel == null)
+		{
+			loadingLevel = StartCoroutine(LoadLevelCore(
+
+			content: () =>
+			{
+				LevelLoader.LoadLevelByName(sceneName);
+			}));
+		}
+	}
+
 	public void QuitGame()
-    {
+	{
 		Application.Quit();
-    }
+	}
 
 	private IEnumerator LoadLevelCore(Action content = null)
 	{
