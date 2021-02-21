@@ -93,7 +93,7 @@
 			<value>1.4635416666666667</value>
 		</property>
 		<property name="maxVoices">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{c5daa740-66b6-4e3f-b061-039f01b4256f}</destination>
