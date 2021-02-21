@@ -44,7 +44,7 @@ public class MusicPlayer : MonoBehaviour
 		if (levelSetter != null)
 		{
 			//UnityEngine.Debug.Log(levelSetter.Rats.Count);
-			if (levelSetter.Rats.Count % 20 == 0)
+			if (levelSetter.Rats.Count % 5 == 0)
 			{
 				if(parameterValue < 1 && levelSetter.Rats.Count > 20 && countBefore < countAfter)
                 {
