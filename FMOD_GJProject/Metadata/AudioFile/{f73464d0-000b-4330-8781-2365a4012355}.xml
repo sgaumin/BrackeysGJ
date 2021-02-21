@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f73464d0-000b-4330-8781-2365a4012355}">
+		<property name="assetPath">
+			<value>collision_bois-002.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.4304583333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{06ccfdd8-8baa-4885-9c15-8158e8e10706}</destination>
+		</relationship>
+	</object>
+</objects>
